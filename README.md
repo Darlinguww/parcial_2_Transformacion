@@ -34,6 +34,32 @@ parcial_2_transformacion/
     └── mart_customer_kpis.sql
 ```
 
+## Setup local (no está en Git)
+
+Hace falta Python 3.9+, y en la raíz del repo dos archivos que el `.gitignore` excluye:
+
+1. `service_account_key.json` — llave de la Service Account del proyecto GCP `dbt-exam-group-4`.
+2. `profiles.yml`:
+
+```yaml
+parcial_2_transformacion:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: dbt-exam-group-4
+      dataset: dbt_exam
+      keyfile: service_account_key.json
+      location: US
+      threads: 4
+      job_execution_timeout_seconds: 300
+```
+
+```powershell
+pip install dbt-core dbt-bigquery
+```
+
 ## Cómo correr, probar y mostrar en BigQuery
 
 Desde la raíz del repo:

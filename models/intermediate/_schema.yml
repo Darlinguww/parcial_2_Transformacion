@@ -20,11 +20,13 @@ models:
       - name: order_status
         tests:
           - accepted_values:
-              values: ['paid', 'pending', 'cancelled', 'refunded']
+              arguments:
+                values: ['paid', 'pending', 'cancelled', 'refunded']
       - name: currency
         tests:
           - accepted_values:
-              values: ['COP', 'USD', 'MXN']
+              arguments:
+                values: ['COP', 'USD', 'MXN']
       - name: net_amount
         description: "amount menos el descuento, topado en cero."
         tests:

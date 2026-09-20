@@ -1,5 +1,3 @@
-{{ config(materialized='view') }}
-
 with orders as (
 
     select * from {{ ref('stg_exam_orders') }}
@@ -44,9 +42,9 @@ calculated as (
     select
         *,
         -- el descuento se topa al monto: la orden 1049 trae 28.7 sobre 27.9
-        amount - least(discount_amount, amount)             as net_amount,
-        discount_amount > amount                            as has_invalid_discount,
-        discount_amount > 0                                 as has_discount,
+        amount - least(coalesce(discount_amount, 0), amount) as net_amount,
+        coalesce(discount_amount, 0) > amount               as has_invalid_discount,
+        coalesce(discount_amount, 0) > 0                    as has_discount,
         date_trunc(order_date, month)                       as order_month,
         extract(year from order_date)                       as order_year,
         date_diff(order_date, customer_created_at, day)     as days_since_signup,

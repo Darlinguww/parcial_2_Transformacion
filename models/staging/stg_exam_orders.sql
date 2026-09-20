@@ -6,7 +6,7 @@ select
     cast(amount_cents as int64) as amount_cents,
     upper(currency) as currency,
     lower(order_status) as order_status,
-    payment_method,
+    lower(payment_method) as payment_method,
     cast(discount_amount as numeric) as discount_amount,
     cast(item_count as int64) as item_count
 from {{ ref('exam_orders') }}
