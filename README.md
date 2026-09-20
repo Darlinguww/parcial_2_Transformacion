@@ -1,8 +1,20 @@
 # Parcial 2 — Transformación de datos con dbt
 
-Fundación Universidad del Norte — Departamento de Ingeniería de Sistemas. Exam II, Group 4.
+Fundación Universidad del Norte — Departamento de Ingeniería de Sistemas. Exam II.
 
 Flujo: **Service Account → seeds → staging → intermediate → marts → BigQuery**.
+
+## Integrantes
+
+| Nombre | GitHub |
+|---|---|
+| Andrés Gómez | [@Andresgomez23310](https://github.com/Andresgomez23310) |
+| Darlen Cecelia | [@Darlinguww](https://github.com/Darlinguww) |
+| Hernando Barreto | [@DeadSilenceIV](https://github.com/DeadSilenceIV)  |
+| José Manuel | [@Znake-G](https://github.com/Znake-G) |
+| Juan Delgado | [@Deelgado](https://github.com/Deelgado) |
+| Sofía Celeste Palacio | [@palaciosofia](https://github.com/palaciosofia) |
+| Zenen Contreras | [@zenencontreras](https://github.com/zenencontreras) |
 
 Proyecto dbt: `parcial_2_transformacion`.  
 GCP: `dbt-exam-group-4` / dataset `dbt_exam`.
