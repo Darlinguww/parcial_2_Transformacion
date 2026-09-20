@@ -23,18 +23,30 @@ GCP: `dbt-exam-group-4` / dataset `dbt_exam`.
 
 ```
 parcial_2_transformacion/
-├── seeds/exam_customers.csv
-├── seeds/exam_orders.csv
-├── models/staging/stg_exam_customers.sql
-├── models/staging/stg_exam_orders.sql
-├── models/intermediate/int_orders_enriched.sql
-└── models/marts/
-    ├── dim_customers.sql
-    ├── fct_orders.sql
-    └── mart_customer_kpis.sql
+├── dbt_project.yml
+├── seeds/
+│   ├── exam_customers.csv
+│   └── exam_orders.csv
+├── models/
+│   ├── staging/
+│   │   ├── _schema.yml
+│   │   ├── stg_exam_customers.sql
+│   │   └── stg_exam_orders.sql
+│   ├── intermediate/
+│   │   ├── _schema.yml
+│   │   └── int_orders_enriched.sql
+│   └── marts/
+│       ├── _schema.yml
+│       ├── dim_customers.sql
+│       ├── fct_orders.sql
+│       └── mart_customer_kpis.sql
+└── tests/
+    └── assert_net_amount_not_negative.sql
 ```
 
-## Setup local (no está en Git)
+`profiles.yml` y `service_account_key.json` van en la raíz, pero no se suben a Git.
+
+## Setup local
 
 Hace falta Python 3.9+, y en la raíz del repo dos archivos que el `.gitignore` excluye:
 
