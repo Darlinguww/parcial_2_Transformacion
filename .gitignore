@@ -2,7 +2,11 @@
 service_account_key.json
 *service_account*.json
 dbt-exam-group-*.json
+profiles.yml
 .env
+
+# ID local de dbt 
+.user.yml
 
 # Entorno y salidas de dbt
 venv/
@@ -10,3 +14,4 @@ target/
 logs/
 dbt_packages/
 __pycache__/
+*.pyc

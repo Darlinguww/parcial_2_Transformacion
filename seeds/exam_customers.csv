@@ -1,0 +1,51 @@
+customer_id,name,country_code,created_at,city,postal_code,preferred_language,signup_channel,is_active,customer_tier
+1,Luis,US,2025-07-03,Houston,77001,en,sales,True,bronze
+2,Rafa,CO,2026-05-07,Santa Marta,470001,es,referral,True,gold
+3,Andres,CO,2026-01-28,Santa Marta,470001,es,web,True,gold
+4,Valentina,CO,2026-02-12,Cali,760001,es,email,True,silver
+5,Sofia,CO,2025-10-21,Bucaramanga,680001,es,referral,False,bronze
+6,Camila,MX,2026-03-21,Puebla,72000,es,web,True,gold
+7,Daniel,US,2025-01-26,Miami,33101,en,referral,True,gold
+8,Laura,CO,2026-02-21,Cartagena,130001,es,email,True,bronze
+9,Mateo,US,2025-05-05,New York,10001,en,web,True,silver
+10,Emma,CO,2026-05-13,Bucaramanga,680001,es,referral,True,bronze
+11,Juan,US,2026-01-25,Houston,77001,en,email,False,gold
+12,Maria,CO,2026-05-03,Bogota,110111,es,tiktok,True,silver
+13,Carlos,CO,2026-05-28,Cartagena,130001,es,instagram,True,silver
+14,Ana,CO,2026-06-11,Bucaramanga,680001,es,tiktok,False,silver
+15,Diego,US,2026-05-25,Miami,33101,en,email,False,bronze
+16,Lucia,US,2025-03-12,Austin,73301,en,sales,True,silver
+17,Pablo,CO,2026-04-01,Barranquilla,80001,es,web,False,silver
+18,Sara,US,2025-04-19,Orlando,32801,en,tiktok,True,gold
+19,Jorge,US,2025-03-22,Miami,33101,en,web,True,silver
+20,Elena,CO,2026-02-18,Cartagena,130001,es,email,True,silver
+21,Miguel,MX,2026-06-21,Monterrey,64000,es,tiktok,True,bronze
+22,Paula,CO,2025-04-03,Barranquilla,80001,es,referral,True,silver
+23,Ivan,US,2025-01-03,Houston,77001,en,instagram,True,gold
+24,Marta,MX,2026-01-17,Ciudad de Mexico,1000,es,referral,True,silver
+25,Hugo,MX,2025-12-19,Cancun,77500,es,tiktok,True,gold
+26,Nora,US,2025-02-04,New York,10001,en,tiktok,True,silver
+27,Tomas,US,2025-11-21,New York,10001,en,tiktok,True,gold
+28,Julia,CO,2026-01-08,Bucaramanga,680001,es,referral,True,silver
+29,Oscar,CO,2025-05-15,Cali,760001,es,tiktok,True,bronze
+30,Clara,MX,2025-01-21,Cancun,77500,es,instagram,True,bronze
+31,Felipe,MX,2025-07-16,Guadalajara,44100,es,instagram,True,bronze
+32,Ines,US,2026-01-13,Orlando,32801,en,tiktok,True,bronze
+33,Raul,US,2026-06-24,Austin,73301,en,email,True,silver
+34,Gabriela,MX,2025-04-10,Puebla,72000,es,email,True,gold
+35,Sergio,CO,2025-12-11,Cartagena,130001,es,sales,False,silver
+36,Daniela,MX,2025-01-17,Cancun,77500,es,sales,False,gold
+37,Andrea,MX,2025-07-04,Ciudad de Mexico,1000,es,sales,True,silver
+38,Nicolas,CO,2025-10-03,Cartagena,130001,es,sales,True,silver
+39,Ximena,US,2026-02-22,Austin,73301,en,tiktok,True,gold
+40,Ruben,US,2026-04-11,Orlando,32801,en,instagram,True,bronze
+41,Cristina,CO,2025-02-18,Cali,760001,es,web,True,gold
+42,Alberto,US,2025-06-10,Miami,33101,en,email,False,bronze
+43,Patricia,CO,2025-11-27,Medellin,50001,es,instagram,True,bronze
+44,Fernando,CO,2026-01-04,Bogota,110111,es,web,True,gold
+45,Adriana,CO,2025-12-11,Cartagena,130001,es,web,True,silver
+46,Ricardo,CO,2026-03-28,Cartagena,130001,es,web,False,silver
+47,Monica,CO,2025-06-25,Barranquilla,80001,es,referral,False,bronze
+48,Esteban,CO,2026-05-23,Bucaramanga,680001,es,instagram,True,gold
+49,Carolina,CO,2025-09-02,Bucaramanga,680001,es,referral,True,silver
+50,Manuel,MX,2025-01-10,Puebla,72000,es,instagram,True,bronze
