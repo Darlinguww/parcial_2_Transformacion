@@ -1,0 +1,12 @@
+# Llaves y credenciales
+service_account_key.json
+*service_account*.json
+dbt-exam-group-*.json
+.env
+
+# Entorno y salidas de dbt
+venv/
+target/
+logs/
+dbt_packages/
+__pycache__/
