@@ -8,7 +8,7 @@ Flujo: **Service Account → seeds → staging → intermediate → marts → Bi
 
 | Nombre | GitHub |
 |---|---|
-| Andrés Gómez | [@Andresgomez23310](https://github.com/Andresgomez23310) |
+| Andrés Gómez | [@Andresgomez2310](https://github.com/Andresgomez23310) |
 | Darlen Cecelia | [@Darlinguww](https://github.com/Darlinguww) |
 | Hernando Barreto | [@DeadSilenceIV](https://github.com/DeadSilenceIV)  |
 | José Manuel | [@Znake-G](https://github.com/Znake-G) |
