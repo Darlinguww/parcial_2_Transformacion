@@ -1,0 +1,35 @@
+version: 2
+
+models:
+  - name: int_orders_enriched
+    description: "Ordenes cruzadas con clientes, con monto neto y banderas de estado. Una fila por orden."
+    columns:
+      - name: order_id
+        description: "Llave primaria."
+        tests:
+          - unique
+          - not_null
+      - name: customer_id
+        description: "Id del cliente de la orden. Puede no existir en stg_exam_customers."
+        tests:
+          - not_null
+      - name: is_orphan_customer
+        description: "true cuando el customer_id no existe en clientes."
+        tests:
+          - not_null
+      - name: order_status
+        tests:
+          - accepted_values:
+              values: ['paid', 'pending', 'cancelled', 'refunded']
+      - name: currency
+        tests:
+          - accepted_values:
+              values: ['COP', 'USD', 'MXN']
+      - name: net_amount
+        description: "amount menos el descuento, topado en cero."
+        tests:
+          - not_null
+      - name: net_revenue
+        description: "net_amount si la orden esta pagada, si no cero."
+        tests:
+          - not_null
